@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-web
+  name:  simple-web
   labels:
-    app: simple-web
+    app:  simple-web
 spec:
   selector:
     matchLabels:
@@ -15,9 +15,9 @@ spec:
         app: simple-web
     spec:
       containers:
-        - name: istory
-          image: kschoi728/simple-web:14
+        - name: simple-web
+          image: dangtong/simple-web
           ports:
-            - containerPort:  3306
+            - containerPort:  80
               name: simple-web
       restartPolicy: Always
