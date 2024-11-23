@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: istory
-          image: kschoi728/simple-web
+          image: kschoi728/simple-web:12
           ports:
             - containerPort:  3306
               name: simple-web
