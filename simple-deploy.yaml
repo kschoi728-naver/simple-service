@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: simple-web
-          image: kschoi728/simple-web:19
+          image: kschoi728/simple-web:20
           ports:
             - containerPort:  80
               name: simple-web
